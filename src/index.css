@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "SF-PRO-DISPLAY-MEDIUM", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.sf-normal {
+  font-family: "SF-PRO-DISPLAY-NORMAL", sans-serif;
+  font-weight: 400 !important;
+}
+.sf-medium {
+  font-family: "SF-PRO-DISPLAY-MEDIUM", sans-serif;
+  font-weight: 500 !important;
+}
+.sf-medium-600 {
+  font-family: "SF-PRO-DISPLAY-MEDIUM", sans-serif;
+  font-weight: 600 !important;
+}
+.sf-bold {
+  font-family: "SF-PRO-DISPLAY-BOLD", sans-serif;
+  font-weight: 700 !important;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-normal {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input,
+textarea {
+  -webkit-text-size-adjust: none;
+}
+
+.custom-gradient {
+  background: rgb(19, 56, 8);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(19, 56, 8, 1) 0%,
+    rgba(81, 174, 54, 1) 83%,
+    rgba(55, 129, 32, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(19, 56, 8, 1) 0%,
+    rgba(81, 174, 54, 1) 83%,
+    rgba(55, 129, 32, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(19, 56, 8, 1) 0%,
+    rgba(81, 174, 54, 1) 83%,
+    rgba(55, 129, 32, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#133808",endColorstr="#378120",GradientType=1);
+}
+
+
+
+/* blur header mobile */
+
+.mobile-blur-menubar{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.5);
+border-radius: 12px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+}
